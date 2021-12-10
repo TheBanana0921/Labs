@@ -1,1 +1,6 @@
-#Hello hi I worked with WORK
+#First one in Project Euler
+sum = 0
+for Multiples in range(1000):
+    if Multiples%5 == 0 or Multiples%3 == 0: #Checks to see if its a multiple of three and five
+        sum = sum+Multiples
+print(sum)
