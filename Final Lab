@@ -4,3 +4,28 @@ for Multiples in range(1000):
     if Multiples%5 == 0 or Multiples%3 == 0: #Checks to see if its a multiple of three and five
         sum = sum+Multiples
 print(sum)
+
+#Second in Project Euler Jan 13th start 1:30 end 3:10
+'''Snumber = 2   #start point number is 2 because it goes back two
+listterm = [0,1]
+for terms in Snumber:  # term input to overwrite Snumber to add to the overall list
+    if (Snumber % 2) == 0: #Were finding the sum of even valued terms so anything not even doesn't need to be used which this code filters
+        listterm = listterm + Snumber  #adding to overall terms
+        first = listterm.index(0:2)
+    else:
+        break'''
+
+set= input(range(3,4000000)) #Range of input within 4 million
+
+if set>2: #has to have two numbers before current number to add 
+    ls=[1,2]
+    set2=set-2 # isolate the two numbers to add them
+    for x in range(set2):
+        ls.append(int(ls[0])+int(ls[-1]))  # same attempts as ealier code to single out the two numbers adding 
+        return ls
+else:
+    print('Something Went Wrong')
+    break
+    
+    
+#third one in Project Euler
