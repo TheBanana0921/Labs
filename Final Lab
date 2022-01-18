@@ -83,6 +83,25 @@ def problem():
     return answer
 print (problem())
 
-#Seventh one in the project Euler 1/17/2022 12:47 to 1:47
+#Seventh one in the project Euler 1/18/2022 12:47 to 1:47
 '''By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
 What is the 10 001st prime number?'''
+
+limit = 10001
+counter = 2
+primes = [2]
+unwanted = []
+flag = True
+for l in range (3,limit,2): #starts at three because from that point on all the prime numbers always two awayor more then two but I only need to keep adding twos 
+    primes.append(l)
+    if (l % 2) == 0:
+        flag = True  # if factor flag True
+        unwanted = l[-1]
+        primes.remove[-1] # trying to remove the non prime numbers
+        continue
+
+if flag: #testing area to see if my code is working 
+    print (primes,'It is not a prime number')
+    print (len(primes))
+else:
+    print (primes,'it is prime number')
