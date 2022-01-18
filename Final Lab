@@ -71,4 +71,18 @@ while p < 232792561: # repeat the whole process each time a new number
                 break
 print (list)
 #Sixth one in project Euler 1/17/2022 11:47 to 12:47
+'''Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.'''
+def problem():
+    limit = 101 # I worte 101 instead of 100 because when I do ranges I don't want to keep adding plus 1
+    sum_of_squares=0 #numbers of natural numbers
+    square_of_sum = 0 #numbers of natural numbers
+    for i in range(1,limit): # i is just 100 which I could have got rid of the for loop but it works so whatever
+        square_of_sum = i * (i+1)/2 
+        sum_of_squares = (i * (i+1) * (2*i+1)) / 6 # equations that I googled I don't know much more
+    answer = square_of_sum * square_of_sum - sum_of_squares #following along with find the difference making this 
+    return answer
+print (problem())
 
+#Seventh one in the project Euler 1/17/2022 12:47 to 1:47
+'''By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+What is the 10 001st prime number?'''
