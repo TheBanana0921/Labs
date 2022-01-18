@@ -39,4 +39,17 @@ while i * i < n:  # So this will continue looping until about to be larger then 
 
 print (n)
 
-#Fourth one in project Euler 1/17/2022
+#Fifth one in project Euler 1/17/2022 9:47 to 10:47
+'''2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is
+evenly divisible by all of the numbers from 1 to 20?'''
+list = []
+i = 1
+n = 
+while i < 20: #diving by the numbers 1 to 20
+    divide = 2520/i
+    i = i + 1
+    if divide%2 ==0: # only positive numbers that are evenly divisable with no remainder are going into the list
+        list.append(divide)
+print (list)
+
+#(Update)Fifth one in project Euler 1/17/2022 10:47 to
