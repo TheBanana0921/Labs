@@ -28,4 +28,15 @@ else:
     break
     
     
-#third one in Project Euler
+#third one in Project Euler 1/17/2022 7:20 pm to 9:36 pm
+''' The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143 ?'''
+n = 600851475143  # Okay so I got a lot of help on this one too I will try to do the next one by myself I was having anaconda issues so I thought it was my code which it was not
+i = 2 # this is 
+while i * i < n:  # So this will continue looping until about to be larger then the square root stoping at the i to see what the n turned out to be which was 6857
+    while n%i == 0: # this updates the n while finding the result of each i number until reaching the largest prime factor which it stops acording to the first while loop
+        n = n / i
+    i = i + 1
+
+print (n)
+
+#Fourth one in project Euler 1/17/2022
